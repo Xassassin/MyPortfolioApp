@@ -20,7 +20,6 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -42,24 +41,24 @@ public class MainActivity extends ActionBarActivity {
     public void sendMessage(View view) {
         Context context = getApplicationContext();
 
-        CharSequence text = "Hello toast!";
+        CharSequence text;
         switch(view.getId()) {
-            case R.id.project_01_btn:
+            case R.id.spotifyStreamerBtn:
                 text = "This button will launch the Music Streamer App";
                 break;
-            case R.id.project_02_btn:
+            case R.id.footballScoresBtn:
                 text = "This button will launch the Scores App";
                 break;
-            case R.id.project_03_btn:
+            case R.id.libraryBtn:
                 text = "This button will launch the Library App";
                 break;
-            case R.id.project_04_btn:
+            case R.id.buildItBiggerBtn:
                 text = "This button will launch the Build It Bigger App";
                 break;
-            case R.id.project_05_btn:
+            case R.id.xyzReaderBtn:
                 text = "This button will launch the XYZ Reader";
                 break;
-            case R.id.project_06_btn:
+            case R.id.capstoneBtn:
                 text = "This button will launch the My Capstone App";
                 break;
             default:
